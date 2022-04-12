@@ -19,4 +19,5 @@ def Prime_Checker(num):
         print(str(num) +" is NOT Prime")     
 
 num = rd.randint(1,1000)
-Prime_Checker(803)                         
+Prime_Checker(803) 
+#803 marked as bad                        
