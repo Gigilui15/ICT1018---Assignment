@@ -1,6 +1,9 @@
 '''
 #Create a non balanced BST with inputs one at a time
 #Needs Class, Object Node with left and right, methods for adding node to tree and possible visualisation using JSON
+
+
+STILL HAVE TO DISPLAY BST
 '''
 class Node:
     def __init__(self, num):
