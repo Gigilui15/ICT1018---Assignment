@@ -12,14 +12,14 @@ def addNode(root, node):
     if (root == None):
         node = root
     else:
-        if (node.num > root.num):
+        if (node.num < root.num):
             #place on left if not null
             if(root.leftNode == None):
                 root.leftNode = node
             #Recursion to Add on Left of Left Nodes below Root
             else:
                 addNode(root.leftNode, node)      
-        #else if(node.num < root.num)         
+        #else if(node.num > root.num)         
         else:
             if(root.rightNode == None):
                 root.rightNode = node
@@ -27,16 +27,25 @@ def addNode(root, node):
             else:
                 addNode(root.rightNode, node)      
 
-stop_input = False   
+stop_input = False 
+print("Enter Root Node: ")
+root = Node(int(input())) 
+ 
 #While loop to Ask User to input Node value
 while stop_input == False:
-    
-    value = input("Enter A New Node Into The BST Or 'x' To Exit: ")
+    value = input("Enter A New Node Into The BST Or Press Enter To Exit: ")
     
     #Ignore Case for Exit value
-    if (value == "x" or "X"):
+    if not value:
         print("Exiting Input Procedure...")
         stop_input = True
     else: 
-        Node(int(value))
-        addNode(root, Node)    
+        num = int(value)
+        addNode(root, Node(num))  
+        
+'''        
+For Testing Purposes  
+print("Root: " ,root.num)
+print("Left " ,root.leftNode.num)
+print("Right" ,root.rightNode.num)     
+'''   
