@@ -15,6 +15,9 @@ def Prime_Checker(num):
     else:
         print(str(num) +" is NOT Prime and can be divided:" ,i)     
 
+num = rd.randint(1,1000)
+Prime_Checker(num) 
+
 def SieveOfEratosthenes(n):
 	prime = [True for i in range(n+1)]
 	p = 2
@@ -32,11 +35,9 @@ def SieveOfEratosthenes(n):
 		if prime[p]:
 			print(p)
    
-# Driver code
-	n = 20
-	print("Following are the prime numbers smaller than or equal to", n)
-	SieveOfEratosthenes(n)
-
-num = rd.randint(1,1000)
-Prime_Checker(num) 
-#803 marked as bad                        
+# Driver Code to Test different instances of n
+nums = [10,20,30,40,50,60]
+i = rd.randint(0,(len(nums)-1))
+n = nums[i]
+print("Following are the prime numbers smaller than or equal to", n)
+SieveOfEratosthenes(n)                  
