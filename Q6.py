@@ -13,7 +13,7 @@ def Prime_Checker(num):
     if (prime == True):
         print(str(num) +" is Prime")
     else:
-        print(str(num) +" is NOT Prime and can be divided by:" ,i)     
+        print(str(num) +" is NOT Prime and can be divided:" ,i)     
 
 def SieveOfEratosthenes(n):
 	prime = [True for i in range(n+1)]
@@ -36,7 +36,6 @@ def SieveOfEratosthenes(n):
 	n = 20
 	print("Following are the prime numbers smaller than or equal to", n)
 	SieveOfEratosthenes(n)
-
 
 num = rd.randint(1,1000)
 Prime_Checker(num) 
