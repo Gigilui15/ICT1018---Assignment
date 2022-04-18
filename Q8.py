@@ -5,8 +5,8 @@ def newtonRaphson(n, iter):
         n =(n + a / n)/2 
     return n
 
-#number of iterataions
-iter = 10
+#number of iterataions (effects the accuracy of the final answer)
+iter = 4
 
 """
 Testing Task 8

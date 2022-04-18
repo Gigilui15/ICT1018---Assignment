@@ -1,5 +1,6 @@
 #Extreme Points = Element is bigger/smaller than both previous and following elements
 A = [0, 5, 3, 6, 8, 7, 15, 9]
+#A = [2,5,7,9,23,53,67]
 
 #Array to Store all Random Points
 extreme_Points = []

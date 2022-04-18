@@ -1,9 +1,10 @@
 import random as rd
 
-#Creating a Random Array of 10 Numbers
+#Creating a Random Array of 30 Numbers
 Temp_Set = set()
 nums = [rd.randrange(1,124)for i in range(30)]
 #nums = [2,5,62,46,1,42,75,24,8,35,13,11,23,9]
+#nums = [2,5]
 print("\nArray : \n" ,nums ,"\n") 
 
 for a in nums:
@@ -23,7 +24,8 @@ for a in range(size):
 length = len(products)
 
 #Checking Each Element's Product in the Array and adding Number A and B to Array: Pairs if Equal
-for x in range(0,length -1):       
+for x in range(0,length -1): 
+    #store holds product of each element [(0:element A)(1:element B)(2:product)]      
     store = products[x][2]
     for y in range((x+1), length):
         comp = products[y][2]
