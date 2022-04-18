@@ -13,7 +13,7 @@ for i in range (0,size):
         extreme_Points.append(A[i])
     
 if(extreme_Points == []):
-    print("Sorted")
+    print("No Extreme Elements are in the Array")
 else:
     print("\nExtreme Elements:\n")
     #Printing the Extreme Elements in the Array
