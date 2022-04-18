@@ -3,8 +3,10 @@ import random as rd
 #Creating a Random Array of 30 Numbers
 Temp_Set = set()
 nums = [rd.randrange(1,124)for i in range(30)]
-#nums = [2,5,62,46,1,42,75,24,8,35,13,11,23,9]
 #nums = [2,5]
+#nums = [2,5,10,13,2,12,8,4,6]
+#nums = [2,5,62,46,1,42,75,24,8,35,13,11,23,9,2,5,62,46,1,42,75,24,8,35,13,11,23,9]
+
 print("\nArray : \n" ,nums ,"\n") 
 
 for a in nums:
