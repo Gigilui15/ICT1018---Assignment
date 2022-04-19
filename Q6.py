@@ -16,6 +16,8 @@ def Prime_Checker(num):
         print(str(num) +" is NOT Prime and can be divided:" ,i)     
 
 num = rd.randint(1,1000)
+#num = 12
+#num = 3
 Prime_Checker(num) 
 
 def SieveOfEratosthenes(n):
