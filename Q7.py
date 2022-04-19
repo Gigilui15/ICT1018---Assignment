@@ -10,7 +10,7 @@ class Node:
         self.leftNode = None
         self.rightNode = None
         self.num = num
-    
+
 def addNode(root, node):
     if (root == None):
         node = root
@@ -51,4 +51,19 @@ For Testing Purposes
 print("Root: " ,root.num)
 print("Left " ,root.leftNode.num)
 print("Right" ,root.rightNode.num)     
-'''   
+'''
+
+def display_node(node):
+    if (node.leftNode and node.rightNode):
+        #for every level of depth -5
+        print("{:>45}".format("--") ,"{:>1}".format(node.leftNode.num),"--","{:>9}".format("--"),"{:>1}".format(node.rightNode.num),"--")
+        
+    elif(node.leftNode):
+        print("{:>46}".format(node.leftNode.num))
+        
+    elif(node.rightNode):
+        print("{:>55}".format(node.rightNode.num))
+
+
+print ("{:>48}".format("--") ,"{:>1}".format(root.num),"--")  
+display_node(root)
