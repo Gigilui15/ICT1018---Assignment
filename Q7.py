@@ -2,8 +2,7 @@
 #Create a non balanced BST with inputs one at a time
 #Needs Class, Object Node with left and right, methods for adding node to tree and possible visualisation using JSON
 
-
-STILL HAVE TO DISPLAY BST
+DIFFICULTY TO DISPLAY BST
 '''
 class Node:
     def __init__(self, num):
@@ -45,25 +44,70 @@ while stop_input == False:
     else: 
         num = int(value)
         addNode(root, Node(num))  
-        
+      
+def bfs(node,level=0,res=[]):
+  if level<len(res):
+    if node:
+      res[level].append(node.num)
+    else:
+      res[level].append(" ")
+  else:
+    if node:
+      res.append([node.num])
+    else:
+      res.append([" "])
+  if not node:
+    return 
+  bfs(node.leftNode,level+1,res)
+  bfs(node.rightNode,level+1,res)
+  return res
+    
+def printBST(node):
+  treeArray = bfs(node)
+  h = len(treeArray)
+  whiteSpaces = (2**h)-1
+  
+  def printSpaces(n):
+    for i in range(n):
+      print(" ",end="")
+
+      
+  for level in treeArray:
+    whiteSpaces = whiteSpaces//2
+    for i,x in enumerate(level):
+      if i==0:
+        printSpaces(whiteSpaces)
+      print(x,end="")
+      printSpaces(1+2*whiteSpaces)
+    print()
+#driver Code
+printBST(root)
+
 '''        
-For Testing Purposes  
+For Testing Purposes Part 1  
 print("Root: " ,root.num)
 print("Left " ,root.leftNode.num)
 print("Right" ,root.rightNode.num)     
 '''
 
+'''
+Part2
 def display_node(node):
     if (node.leftNode and node.rightNode):
         #for every level of depth -5
-        print("{:>45}".format("--") ,"{:>1}".format(node.leftNode.num),"--","{:>9}".format("--"),"{:>1}".format(node.rightNode.num),"--")
+        print("{:>40}".format(node.leftNode.num),"{:>20}".format(node.rightNode.num))
+        display_node(node.leftNode)
+        display_node(node.rightNode)
         
     elif(node.leftNode):
-        print("{:>46}".format(node.leftNode.num))
+        print("{:>40}".format(node.leftNode.num))
+        display_node(node.leftNode)
         
     elif(node.rightNode):
-        print("{:>55}".format(node.rightNode.num))
+        print("{:>60}".format(node.rightNode.num))
+        display_node(node.rightNode)
 
 
-print ("{:>48}".format("--") ,"{:>1}".format(root.num),"--")  
+print ("{:>48}".format(root.num))  
 display_node(root)
+'''
