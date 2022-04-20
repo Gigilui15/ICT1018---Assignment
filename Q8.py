@@ -6,15 +6,15 @@ def newtonRaphson(n, iter):
     return n
 
 #number of iterataions (effects the accuracy of the final answer)
-iter = 400
+iter = 1
 
 """
 Testing Task 8
 """
-
-print (newtonRaphson(9,iter))
-print (newtonRaphson(2,iter))
-print (newtonRaphson(12,iter))
-print (newtonRaphson(37,iter))
-print (newtonRaphson(53,iter))
-print (newtonRaphson(25,iter))
+print("With " ,iter ," iterations: \n")
+print ("Approximate Square Root for 9: " ,newtonRaphson(9,iter) ,"\n")
+print ("Approximate Square Root for 2: " ,newtonRaphson(2,iter) ,"\n")
+print ("Approximate Square Root for 12: " ,newtonRaphson(12,iter) ,"\n")
+print ("Approximate Square Root for 37: " ,newtonRaphson(37,iter) ,"\n")
+print ("Approximate Square Root for 53: " ,newtonRaphson(53,iter) ,"\n")
+print ("Approximate Square Root for 9: " ,newtonRaphson(25,iter) ,"\n")
