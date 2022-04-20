@@ -1,4 +1,8 @@
-nums = [1,2,55,3,13,5,6,30,8,14]
+#nums = [1,2,55,3,13,5,6,30,8,14]
+#nums = [5,5,5,5,5,5]
+nums = [0,-2,-3,-1,-55,-9]
+
+print(nums ,":\n")
 
 def find_largest(list):
     #largest element is the only element
