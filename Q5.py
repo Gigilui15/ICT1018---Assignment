@@ -31,7 +31,7 @@ def Filler(data):
 
 
 #Test Data:
-#print(Filler("10 5 +"))
-#print(Filler("22 11 / 33 *"))
+print(Filler("10 5 +"))
+print(Filler("22 11 / 33 *"))
 #print(Filler("100 2 + 30 b"))
-print(Filler("3 * / 22 11 33"))
+#print(Filler("3 * / 22 11 33"))
