@@ -1,1 +1,1 @@
-ewtonRaphson(25,iter) ,"\n")
+first ",n ," elements is : \n" ,fibonacci)
