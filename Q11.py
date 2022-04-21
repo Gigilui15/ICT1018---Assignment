@@ -7,7 +7,7 @@ print("Enter the value for n: ")
 n = int(input())
 error = "!! n cannot be equal to or less than 0 !!"
     
-8
+
 def Fibonacchi_Sequence(fibonacci,n,sum):
     for i in range(2,n):
         next = fibonacci[-1] + fibonacci[-2]
