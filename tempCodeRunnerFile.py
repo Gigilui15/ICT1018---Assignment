@@ -1,1 +1,2 @@
-first ",n ," elements is : \n" ,fibonacci)
+print("Enter the value for n: ")
+n = int(input())

@@ -1,5 +1,3 @@
-from os import remove
-
 fibonacci = [0,1] 
 sum = 0  
 
@@ -25,4 +23,4 @@ elif(n == 1):
     fibonacci.remove(1)
     Fibonacchi_Sequence(fibonacci,n,sum)
 else:
-    Fibonacchi_Sequence(fibonacci,n,sum)       
+    Fibonacchi_Sequence(fibonacci,n,sum)    
