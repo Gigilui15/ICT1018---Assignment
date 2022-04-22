@@ -62,7 +62,7 @@ h = len(B) - 1
 quick_Sort(B, 0 ,h)
 print("\nArray B After Quick Sort: \n " ,B) 
  
-
+#Method to merge arrays using pointers and loops
 def merge_Arrays(A, B, C):
     #Setting the length of Array C
     length = len(A) + len(B)
