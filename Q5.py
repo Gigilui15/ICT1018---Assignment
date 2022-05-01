@@ -9,19 +9,19 @@ def Filler(data):
         
         if op in {"+", "-", "*", "/"}:
 
-            num2 = stack.pop()
-            num1 = stack.pop()
+            numB = stack.pop()
+            numA = stack.pop()
 
             if op == "+":
-                ans = num1 + num2
+                sum = numA + numB
             if op == "-":
-                ans = num1 - num2
+                sum = numA - numB
             if op == "*":
-                ans = num1 * num2
+                sum = numA * numB
             if op == "/":
-                ans = num1 / num2
+                sum = numA / numB
 
-            stack.append(ans)
+            stack.append(sum)
 
         else:
             stack.append(int(op))
@@ -32,6 +32,6 @@ def Filler(data):
 
 #Test Data:
 print(Filler("10 5 +"))
-print(Filler("22 11 / 33 *"))
+print(Filler("44 22 / 50 *"))
 #print(Filler("100 2 + 30 b"))
 #print(Filler("3 * / 22 11 33"))
